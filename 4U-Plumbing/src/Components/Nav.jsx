@@ -1,5 +1,6 @@
-import Logo from "../images/logo-transparent.png";
+import Logo from "../images/logo-transparent.png"
 import '../styles/index.css'
+import { CiAlarmOn } from "react-icons/ci";
 
 function Nav() {
   return (
@@ -13,11 +14,11 @@ function Nav() {
         <span className="top-nav-emailUs">
           <p className="email-Us">E-mail us:</p><p>4U-Plumbing.co.za</p>
         </span>
-        <span>
+        <span className="top-nav-operatingTimes">
           <div>
-            <img src="" alt="clockIcon" />
+          <CiAlarmOn className="clockIcon" />
           </div>
-          <p>Monday - Friday</p>
+          <p>Weekdays (Monday to Friday)</p>
         </span>
         <span className="top-nav-socialMedia">
           <p className="Follow-us">Follow us:</p>

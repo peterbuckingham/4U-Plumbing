@@ -71,6 +71,22 @@ html, body {
 
 }
 
+.top-nav-operatingTimes {
+  color: white;
+  margin-top: -10px;
+  margin-right: 250px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.clockIcon {
+  height: 20px;
+  width: auto;
+  margin-right: 5px;
+  margin-top: 1px;
+  stroke-width: 1px;
+}
+
 .main-Nav ul {
   background-color: rgb(255, 255, 255);
   width: 100%; /* Ensures it takes up full width */
