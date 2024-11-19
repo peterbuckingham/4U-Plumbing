@@ -112,4 +112,27 @@ html, body {
   font-weight: 600;
 }
 
+.top-nav-socialMedia {
+  margin-bottom: 10px;
+}
+
+.Follow-us {
+  color: rgb(189, 238, 255);
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: -140px;
+  margin-right: 10px;
+}
+
+.topnav-times {
+  color: rgb(189, 238, 255);
+  margin-right: 5px;
+}
+
+.topnav-contact{
+  margin-left: 100px;
+  margin-right: 5px;
+  color: rgb(189, 238, 255);
+}
+
 
