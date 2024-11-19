@@ -32,7 +32,7 @@ function Nav() {
         <span className="top-nav-socialMedia">
           <p className="Follow-us">Follow us:</p>
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=61569138837348"
             target="_blank"
             rel="noopener noreferrer"
           >
