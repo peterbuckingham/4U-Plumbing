@@ -19,10 +19,10 @@ html, body {
 
 .fouruPlumbingLogo {
   height: auto;
-  width: 120px;
+  width: 45px;
   position: absolute; /* Allows for precise positioning */
-  top: 10px; /* Adjust this value to position your logo vertically */
-  left: 60px; /* Center horizontally */
+  top: 15px; /* Adjust this value to position your logo vertically */
+  left: 65px; /* Center horizontally */
   transform: translateX(-50%); /* Center the logo precisely */
   z-index: 2; /* Ensure the logo is above the top nav */
 }
@@ -35,6 +35,7 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: white;
+
 }
 
 .top-nav {

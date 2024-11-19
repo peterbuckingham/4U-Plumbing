@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../images/logo-transparent.png";
 import "../styles/index.css";
 import { CiAlarmOn } from "react-icons/ci";
