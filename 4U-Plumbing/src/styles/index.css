@@ -112,6 +112,10 @@ html, body {
   font-weight: 600;
 }
 
+.main-Nav a:hover {
+  color: rgb(86, 213, 255);;
+}
+
 .top-nav-socialMedia {
   margin-bottom: 10px;
 }
@@ -134,5 +138,7 @@ html, body {
   margin-right: 5px;
   color: rgb(189, 238, 255);
 }
+
+.main-Nav
 
 
