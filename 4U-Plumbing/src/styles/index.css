@@ -144,8 +144,13 @@ html, body {
 /* .....................Hero Section.......................... */
 
 .hero {
-  background-color: green;
-  background-image: url('../images/Hero-image.jpg');
+  background: linear-gradient(
+      to bottom,
+      rgba(154, 169, 255, 0.259),
+      rgba(22, 0, 110, 0.73)
+    ),
+    url('../images/Hero-image.jpg');
+  background-color: green; /* fallback color in case background-image fails */
   height: 542px;
   width: 100%;
   background-attachment: fixed;
@@ -156,6 +161,7 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+
 
 .hero-content {
   text-align: center;
