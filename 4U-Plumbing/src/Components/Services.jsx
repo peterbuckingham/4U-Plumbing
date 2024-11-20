@@ -3,7 +3,10 @@ import "../styles/index.css"; // Make sure to import your styles
 const Services = () => {
   return (
     <section className="services" id="services">
+      <div className="text-line"></div>
       <h2 className="services-title">Our Plumbing Services</h2>
+      <div className="text-line2"></div>
+      <p className="services-watermark">Services</p>
       <div className="services-list">
         <div className="service-item">
           <h3 className="service-title">Leak Detection</h3>
