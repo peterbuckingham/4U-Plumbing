@@ -333,6 +333,7 @@ body {
   padding: 0px;
   padding-top: 50px;
   padding-bottom: 500px;
+  margin-bottom: 50px;
 }
 
 .whyChooseUs-subHeading {
@@ -389,6 +390,7 @@ body {
   width: 220px;
   left: 700px;
   margin: -350px 0px 0px 0px;
+  border-radius: 15px;
 }
 
 .blockOne h3 {
@@ -408,6 +410,7 @@ body {
   width: 220px;
   left: 950px;
   margin: -320px 0px 0px 0px;
+  border-radius: 15px;
 }
 
 .blockTwo h3 {
@@ -427,6 +430,7 @@ body {
   width: 220px;
   left: 950px;
   margin: -70px 0px 0px 0px;
+  border-radius: 15px;
 }
 
 .blockThree h3 {
@@ -446,6 +450,7 @@ body {
   width: 220px;
   left: 950px;
   margin: -100px 50px 0px -250px;
+  border-radius: 15px;
 }
 
 .blockFour h3 {
@@ -494,3 +499,4 @@ body {
   height: 250px;
   width: auto;
 }
+
