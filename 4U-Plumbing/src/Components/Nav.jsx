@@ -19,7 +19,7 @@ function Nav() {
         </div>
         <span className="top-nav-emailUs">
           <p className="email-Us">E-mail us:</p>
-          <p>4U-Plumbing.co.za</p>
+          <p>info@4uplumbing.co.za</p>
         </span>
         <span className="top-nav-operatingTimes">
           <div>

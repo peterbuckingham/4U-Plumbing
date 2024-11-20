@@ -1,11 +1,10 @@
-import { height } from "@fortawesome/free-brands-svg-icons/fa42Group";
+
 import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import { PiX } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -26,7 +25,8 @@ const Footer = () => {
 
       {/* Footer Content */}
       <div style={styles.footerContent}>
-        <p style={styles.text}>Contact us: info@4uplumbing.com</p>
+        <p style={styles.contactUs}>Contact us:</p> 
+        <p style={styles.text}>info@4uplumbing.com</p>
         <p style={styles.text}>+27 82 590 7453</p>
 
         {/* Social Media Links */}
@@ -86,13 +86,20 @@ const styles = {
   },
   map: {
     border: 0,
+    marginTop: "20px",
   },
   footerContent: {
-    padding: "20px",
+    paddingTop: "10px",
+    paddingBottom: "20px",
   },
   text: {
     margin: "5px 0",
     paddingTop: "15px",
+  },
+  contactUs: {
+    color: "#c8f4ff",
+    fontWeight: "bold",
+    marginBottom: "1px",
   },
   socialMedia: {
     display: "flex",
@@ -112,7 +119,7 @@ const styles = {
     color: "#00d4ff",
   },
   copywrite: {
-    backgroundColor: "#d1dff0",
+    backgroundColor: "#fff",
     height: "50px",
     color: "#1e60aa"
   },

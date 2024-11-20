@@ -11,6 +11,7 @@ function WhyChooseUs() {
       <div className="text-line3"></div>
       <h3 className="whyChooseUs-subHeading">Why Choose us?</h3>
       <h1>Only the Best Quality <br /> Repairs and Renovations</h1>
+      <p className='whyChooseUs-watermark'>Why Choose Us</p>
       <p className="WhyChooseUs-copy">
         Our goal is to provide our customers with highly professional plumbing
         services. <br />We pride ourselves on our reliable and friendly service that
@@ -39,9 +40,10 @@ function WhyChooseUs() {
         <div className="blockFour">
         <img className="FriendlyIcon" src={QualityIcon} alt="Icon" />
           <h3>Quality service you can trust</h3>
-          <p>We warrenty reliable service with every job</p>
+          <p>We guarantee dependable service with every project.</p>
         </div>
       </div>
+      <div className="section-divider"></div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Hero from './components/Hero.jsx'
 import Services from './components/Services.jsx'
 import WhyChooseUs from './components/WhyChooseUs.jsx'
 import Footer from './components/Footer.jsx'
+import QuoteForm from './components/Quote.jsx'
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Hero />
       <Services />
       <WhyChooseUs />
+      <QuoteForm />
+      
       <Footer />
 
     </div>

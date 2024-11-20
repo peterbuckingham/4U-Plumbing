@@ -125,7 +125,7 @@ body {
   color: rgb(189, 238, 255);
   font-weight: 600;
   font-size: 14px;
-  margin-left: -140px;
+  margin-left: -200px;
   margin-right: 10px;
 }
 
@@ -229,7 +229,7 @@ body {
   text-align: center;
   position: relative; /* Ensures z-index layering works */
   z-index: 1;
-  height: 400px;
+  height: 450px;
 }
 
 .text-line {
@@ -299,7 +299,9 @@ body {
 
 .service-item {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -332,7 +334,7 @@ body {
   margin: 0px;
   padding: 0px;
   padding-top: 50px;
-  padding-bottom: 500px;
+  padding-bottom: 200px;
   margin-bottom: 50px;
 }
 
@@ -344,6 +346,34 @@ body {
 .WhyChooseUs-Container h1 {
   color: #1e60aa;
   margin-left: 10px;
+}
+
+.whyChooseUs-watermark {
+  position: absolute;
+  color: rgba(
+    128,
+    128,
+    128,
+    0.1
+  ); /* Fainter color for a more watermark-like effect */
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  margin: 0px;
+  margin-top: -90px;
+  padding: 0px;
+  left: 10px; /* Center vertically within the container */
+  transform: translateY(-50%);
+  z-index: 0; /* Ensure it stays behind other content */
+  /* Gradient for text */
+  background: linear-gradient(
+    to right,
+    #0206ff0a,
+    #5c74ff06
+  ); /* Gradient colors */
+  -webkit-background-clip: text; /* Clips the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Makes the rest of the text transparent */
+  text-align: center; /* Align text properly if needed */
 }
 
 .text-line3 {
@@ -385,7 +415,7 @@ body {
 
 .blockOne {
   position: absolute;
-  background-color: rgba(128, 128, 128, 0.112);
+  background-color: #d3dfee;
   height: 220px;
   width: 220px;
   left: 700px;
@@ -405,7 +435,7 @@ body {
 
 .blockTwo {
   position: absolute;
-  background-color: rgba(128, 128, 128, 0.112);
+  background-color: #d3dfee;
   height: 220px;
   width: 220px;
   left: 950px;
@@ -425,7 +455,7 @@ body {
 
 .blockThree {
   position: absolute;
-  background-color: rgba(128, 128, 128, 0.112);
+  background-color: #d3dfee;
   height: 220px;
   width: 220px;
   left: 950px;
@@ -445,7 +475,7 @@ body {
 
 .blockFour {
   position: absolute;
-  background-color: rgba(128, 128, 128, 0.112);
+  background-color: #d3dfee;
   height: 240px;
   width: 220px;
   left: 950px;
@@ -491,12 +521,325 @@ body {
   padding: 0px;
 }
 
-/* ...............Footer.................. */
-
-.Footer-container {
-  background-color: #004aad;
-  margin-top: -300px;
-  height: 250px;
-  width: auto;
+.section-divider {
+  position: relative; /* Allows the divider to be placed in a specific location */
+  top: 200px; /* Adjust this value to position the divider vertically where you want */
+  left: 0; /* Start from the left edge of the parent container */
+  background-color: #1d62ae;
+  height: 20px;
+  width: 100%; /* Adjust the width to cover the container */
+  z-index: 10; /* Ensure it stays above other elements if necessary */
 }
+
+
+/* ...............Quote Form..............*/
+/* Outer container holding the form and background */
+.quote-form-container {
+  position: relative;
+  height: 500px; /* Make the container fill the entire viewport */
+  margin-top: -50px;
+  background-image: url('../images/bathroom-sink.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 300px;
+
+  /* Center content vertically and horizontally */
+  display: flex;
+  justify-content: center; /* Aligns form horizontally in the center */
+  align-items: center; /* Aligns form vertically in the center */
+}
+
+/* Form styling */
+.quote-form {
+  position: relative;
+  z-index: 1; /* Ensure the form appears above the background */
+  background-color: rgb(255, 255, 255); /* Adds slight transparency */
+  max-width: 500px;
+  width: 100%; /* Ensures the form has a responsive width */
+  padding: 15px 60px 40px 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.quote-form h2 {
+  color: #1d62ae;
+}
+
+/* Form input styling */
+.quote-form input, .quote-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.quote-form button {
+  width: 100px;
+  padding: 10px;
+  background-color: #0400ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.quote-form button:hover {
+  
+  background-color:#ffffff;
+  border: 1px solid#0400ff;
+  color: #0400ff;
+
+}
+
+
+.quote-form p {
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+.quote-form input {
+  background-color: #dddddd83;
+  border: none;
+  border-radius: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.quote-form #message {
+  font-weight: bold;
+  background-color: #dddddd83;
+  border: none;
+  border-radius: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888; /* Choose the color you want */
+}
+
+
+
+
+/* Mobile First Approach: Styles for small screens */
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  .topNavShape {
+    height: 150px;
+    width: 150px;
+    margin-top: 5px;
+  }
+
+  .fouruPlumbingLogo {
+    width: 35px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .fouruPlumbingLogo-text {
+    margin-top: 40px;
+    margin-left: -120px;
+    font-size: 16px;
+  }
+
+  .top-nav {
+    height: 60px;
+  }
+
+  .top-nav .top-nav-emailUs {
+    margin-right: 20px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  .top-nav-operatingTimes {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+
+  .main-Nav ul {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .services {
+    height: auto; /* Adjust height for mobile */
+    padding: 20px;
+  }
+
+  .services-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .service-item {
+    padding: 15px;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+
+  .blockOne, .blockTwo {
+    width: 180px;
+    height: 180px;
+    left: 50%;
+    margin-left: -90px;
+  }
+}
+
+/* Tablet devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .topNavShape {
+    height: 180px;
+    width: 180px;
+    margin-top: 8px;
+  }
+
+  .fouruPlumbingLogo {
+    width: 40px;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .fouruPlumbingLogo-text {
+    margin-top: 50px;
+    margin-left: -140px;
+    font-size: 18px;
+  }
+
+  .top-nav {
+    height: 70px;
+  }
+
+  .top-nav .top-nav-emailUs {
+    margin-right: 50px;
+    font-size: 13px;
+  }
+
+  .main-Nav ul {
+    gap: 40px;
+  }
+
+  .hero {
+    height: 450px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .services {
+    padding: 30px 0;
+    height: auto;
+  }
+
+  .services-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-item {
+    padding: 20px;
+  }
+
+  .service-title {
+    font-size: 1.6rem;
+  }
+
+  .service-description {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop and larger screens */
+@media (min-width: 1025px) {
+  .topNavShape {
+    height: 200px;
+    width: 200px;
+  }
+
+  .fouruPlumbingLogo {
+    width: 45px;
+    top: 15px;
+    left: 65px;
+  }
+
+  .fouruPlumbingLogo-text {
+    margin-top: 60px;
+    margin-left: -185px;
+    font-size: 20px;
+  }
+
+  .top-nav {
+    height: 80px;
+  }
+
+  .top-nav .top-nav-emailUs {
+    margin-right: 100px;
+    font-size: 14px;
+  }
+
+  .main-Nav ul {
+    gap: 100px;
+  }
+
+  .hero {
+    height: 542px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .services {
+    height: 450px;
+  }
+
+  .services-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .service-item {
+    padding: 30px;
+  }
+
+  .service-title {
+    font-size: 1.8rem;
+  }
+
+  .service-description {
+    font-size: 1rem;
+  }
+}
+
 
