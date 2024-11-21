@@ -26,7 +26,7 @@ const TopNav = () => {
             <Nav.Link href="#services">Services</Nav.Link>
             <Nav.Link href="#About">About</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
-            <Button variant="outline-light" href="mailto:info@fouruplumbing.com">Email Us</Button>
+            <Button variant="outline-light" href="mailto:info@4uplumbing.co.za">Email Us</Button>
             <Button variant="outline-light" href="tel:+27825907453">Call Us</Button>
 
           </Nav>

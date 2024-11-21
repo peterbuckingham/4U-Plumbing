@@ -756,7 +756,7 @@ textarea::placeholder {
     padding-bottom: 100px;
   }
   .profilePic {
-    margin-left: 10px;
+    margin-left: -15px;
   }
   .founder-text {
     margin-top: 10px;
