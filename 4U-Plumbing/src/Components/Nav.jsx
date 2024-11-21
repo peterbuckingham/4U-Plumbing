@@ -1,92 +1,38 @@
-import Logo from "../images/logo-transparent.png";
-import "../styles/index.css";
-import { CiAlarmOn } from "react-icons/ci";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesomeIcon
-import {
-  faFacebook,
-  faInstagram,
-  faTiktok,
-} from "@fortawesome/free-brands-svg-icons"; // Import icons
+import React, { useState } from 'react';
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 
-function Nav() {
+const TopNav = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggle = () => setExpanded(!expanded);
+
   return (
-    <div>
-      <div className="top-nav">
-        <div className="topNavShape"></div>
-        <div>
-          <img className="fouruPlumbingLogo" src={Logo} alt="4U-PlumbingLogo" />
-          <p className="fouruPlumbingLogo-text">4U Plumbing</p>
-        </div>
-        <span className="top-nav-emailUs">
-          <p className="email-Us">E-mail us:</p>
-          <p>info@4uplumbing.co.za</p>
-        </span>
-        <span className="top-nav-operatingTimes">
-          <div>
-            <CiAlarmOn className="clockIcon" />
-          </div>
-          <p className="topnav-times">Operating Times: </p><p>Weekdays (Monday to Friday)</p>
-          <p className="topnav-contact">Contact: </p><p>+27 82 590 7453</p>
-        </span>
-        <span className="top-nav-socialMedia">
-          <p className="Follow-us">Follow us:</p>
-          <a
-            href="https://www.facebook.com/profile.php?id=61569138837348"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faFacebook}
-              size="1x"
-              style={{ color: "#f7f9ff", marginRight: "20px" }}
-            />
-          </a>
-          <a
-            href="https://www.tiktok.com/@4u_plumbing?is_from_webapp=1&sender_device=pc"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faTiktok}
-              size="1x"
-              style={{ color: "#f7f9ff", marginRight: "20px" }}
-            />
-          </a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              size="1x"
-              style={{ color: "#f7f9ff" }}
-            />
-          </a>
-        </span>
-      </div>
+    <Navbar expanded={expanded} bg="primary" variant="dark" expand="lg">
+      <Container>
+        {/* Logo */}
+        <Navbar.Brand href="#home">
+          <img src="logo.png" alt="Logo" height="40" />
+          Four U Plumbing
+        </Navbar.Brand>
+        
+        {/* Hamburger Menu */}
+        <Navbar.Toggle aria-controls="navbar-nav" onClick={handleToggle} />
+        
+        {/* Navbar Links */}
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#services">Services</Nav.Link>
+            <Nav.Link href="#About">About</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Button variant="outline-light" href="mailto:info@fouruplumbing.com">Email Us</Button>
+            <Button variant="outline-light" href="tel:+27825907453">Call Us</Button>
 
-      <div className="main-Nav">
-        <ul>
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">Services</a>
-          </li>
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">FAQ</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-}
+};
 
-export default Nav;
+export default TopNav;

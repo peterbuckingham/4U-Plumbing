@@ -6,6 +6,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Main top nav container */
+.top-nav {
+  background-color: #1e60aa;
+  margin-top: -8px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%; /* Make the nav bar span full width */
+  position: relative; /* Keeps the logo and other elements in correct position */
+}
+
+/* Skewed shape for the nav */
 .topNavShape {
   background-color: #1e60aa;
   height: 200px;
@@ -15,17 +27,18 @@ body {
   border-radius: 5px;
   margin-top: 10px;
   z-index: 1;
-  position: relative; /* Ensure the element is within the normal document flow */
+  position: relative;
 }
 
+/* Logo and text inside the top nav */
 .fouruPlumbingLogo {
   height: auto;
   width: 45px;
-  position: absolute; /* Allows for precise positioning */
-  top: 15px; /* Adjust this value to position your logo vertically */
-  left: 65px; /* Center horizontally */
-  transform: translateX(-50%); /* Center the logo precisely */
-  z-index: 2; /* Ensure the logo is above the top nav */
+  position: absolute;
+  top: 15px;
+  left: 65px;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 .top-nav .fouruPlumbingLogo-text {
@@ -39,15 +52,7 @@ body {
   font-size: 18px;
 }
 
-.top-nav {
-  background-color: #1e60aa;
-  margin-top: -8px;
-  display: flex;
-  align-items: center;
-  height: 80px;
-  width: 100%; /* Make the nav bar span full width */
-}
-
+/* Social media links and operating times */
 .top-nav span {
   display: flex;
   justify-content: center;
@@ -88,27 +93,28 @@ body {
   stroke-width: 1px;
 }
 
+/* Navigation links on larger screens */
 .main-Nav ul {
   background-color: rgb(255, 255, 255);
-  width: 100%; /* Ensures it takes up full width */
+  width: 100%;
   height: 85px;
   margin-top: -20px;
   margin-bottom: 0px;
   display: flex;
-  flex-direction: row; /* Ensures the links are in a row */
+  flex-direction: row;
   gap: 100px;
-  padding: 0; /* Removes any default padding */
-  list-style-type: none; /* Removes default list bullets */
-  align-items: center; /* Centers items vertically */
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
   justify-content: center;
 }
 
 .main-Nav a {
   text-decoration: none;
-  display: inline-flex; /* Keeps the links inline */
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px; /* Adds padding inside the links */
+  padding: 10px 20px;
   color: #1e60aa;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -118,6 +124,63 @@ body {
   color: rgb(86, 213, 255);
 }
 
+/* Hide menu on small screens by default */
+.main-Nav ul {
+  display: none; /* Hidden on mobile */
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background-color: #1e60aa;
+  padding: 20px 0;
+}
+
+/* Show menu when active (hamburger clicked) */
+.main-Nav.active ul {
+  display: flex;
+}
+
+/* Hamburger menu button (displayed on small screens) */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* Mobile screen styles */
+@media (max-width: 768px) {
+  /* Show hamburger menu on small screens */
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Adjusting position of elements for mobile */
+  .top-nav .fouruPlumbingLogo-text {
+    margin-left: -160px; /* Adjust for smaller screen */
+  }
+
+  .top-nav .top-nav-emailUs {
+    margin-right: 60px;
+  }
+
+  /* Show the nav links on click */
+  .main-Nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: #1e60aa;
+    padding: 20px 0;
+  }
+
+  .main-Nav.active ul {
+    display: flex;
+  }
+}
+
+/* Social media section */
 .top-nav-socialMedia {
   margin-bottom: 10px;
 }
@@ -140,6 +203,7 @@ body {
   margin-right: 5px;
   color: rgb(189, 238, 255);
 }
+
 
 /* .....................Hero Section.......................... */
 
@@ -233,51 +297,80 @@ body {
   height: 450px;
 }
 
-.text-line {
-  position: absolute;
-  background-color: #1e60aa;
-  height: 5px;
-  width: 65px;
-  top: 74px;
-  left: 380px;
-}
-
+.text-line,
 .text-line2 {
   position: absolute;
   background-color: #1e60aa;
   height: 5px;
-  width: 65px;
-  top: 74px;
-  left: 905px;
+  width: 10%; /* Relative to the container width */
+  top: 45px;
+  left: 22%; /* Adjust for positioning */
 }
+
+/* Styling for .text-line2 */
+.text-line2 {
+  left: 68%; /* Different position for the second line */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1215px) {
+  .text-line,
+  .text-line2 {
+    height: 0px;
+    width: 0px;
+  }
+
+  .services-title {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-line,
+  .text-line2 {
+    height: 0px;
+    width: 0px;
+  }
+  
+  .services-title {
+    text-decoration: underline;
+  }
+}
+
 
 .services-watermark {
   position: absolute;
-  color: rgba(
-    128,
-    128,
-    128,
-    0.1
-  ); /* Fainter color for a more watermark-like effect */
+  color: rgba(128, 128, 128, 0.1); /* Fainter color for a more watermark-like effect */
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 800;
-  font-size: 250px;
-  margin: 0px;
-  padding: 0px;
-  left: 0px;
-  top: 35%; /* Center vertically within the container */
-  transform: translateY(-50%);
+  font-size: clamp(100px, 15vw, 250px); /* Responsive font size */
+  margin: 0;
+  padding: 0;
+  left: 50%; /* Center horizontally */
+  top: 50%; /* Center vertically */
+  transform: translate(-50%, -50%); /* Center fully */
   z-index: 0; /* Ensure it stays behind other content */
-  /* Gradient for text */
-  background: linear-gradient(
-    to right,
-    #0206ff0a,
-    #5c74ff06
-  ); /* Gradient colors */
+  background: linear-gradient(to right, #0206ff0a, #5c74ff06); /* Gradient colors */
   -webkit-background-clip: text; /* Clips the gradient to the text */
   -webkit-text-fill-color: transparent; /* Makes the rest of the text transparent */
   text-align: center; /* Align text properly if needed */
 }
+
+/* Additional Media Queries for Finer Control */
+@media (max-width: 768px) {
+  .services-watermark {
+    font-size: clamp(60px, 12vw, 150px); /* Reduce size on smaller screens */
+    top: 40%; /* Adjust vertical positioning */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-watermark {
+    font-size: 60px; /* Smaller size for mobile devices */
+    top: 30%; /* Further adjust vertical positioning */
+  }
+}
+
 
 .services-title {
   font-size: 2.5rem;
@@ -348,24 +441,6 @@ body {
   text-align: center;
 }
 
-.whyChooseUs-watermark {
-  position: absolute;
-  color: rgba(128, 128, 128, 0.1);
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  font-size: clamp(40px, 10vw, 80px); /* Responsive font size */
-  margin: 0;
-  padding: 0;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  background: linear-gradient(to right, #0206ff0a, #5c74ff06);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
-
 .text-line3 {
   position: relative;
   background-color: #278cff;
@@ -386,6 +461,7 @@ body {
 .profilePic {
   height: 80px;
   margin: 20px auto;
+  margin-left: 35%;
   display: block;
 }
 
@@ -408,6 +484,8 @@ body {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: -100px;
   align-items: center;
   padding: 20px;
   text-align: center;
@@ -430,20 +508,42 @@ body {
   font-size: 14px;
 }
 
+.founder-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -83px;
+  margin-left: 340px;
+
+}
+
+.divider1 {
+  height: 30px;
+  width: 2px;
+  margin-right: 10px;
+  margin-left: -130px;
+  background-color: #006eff;
+}
+
+.founder-text {
+  margin-left: 5px;
+}
+
 .icon {
   height: 80px;
   width: auto;
   margin-bottom: 10px;
 }
 
-.section-divider {
+/* .section-divider {
   position: relative;
-  top: 50px;
+  top: 150px;
   background-color: #1d62ae;
   height: 20px;
-  width: 100%;
+  width: 120%;
+  margin-left: -20px;
   z-index: 10;
-}
+} */
 
 .ExperiencedIcon {
   height: 80px;

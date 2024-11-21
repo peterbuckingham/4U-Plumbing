@@ -5,6 +5,8 @@ import Services from './components/Services.jsx'
 import WhyChooseUs from './components/WhyChooseUs.jsx'
 import Footer from './components/Footer.jsx'
 import QuoteForm from './components/Quote.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
