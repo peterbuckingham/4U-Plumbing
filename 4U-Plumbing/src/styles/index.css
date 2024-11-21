@@ -332,213 +332,148 @@ body {
 
 .WhyChooseUs-Container {
   background-color: #f4f8fb;
-  margin: 0px;
-  padding: 0px;
-  padding-top: 50px;
-  padding-bottom: 200px;
-  margin-bottom: 50px;
+  margin: 0;
+  padding: 50px 20px 200px;
 }
 
 .whyChooseUs-subHeading {
-  margin: 0px 50px;
+  margin: 0 20px;
   color: #278cff;
+  text-align: center;
 }
 
 .WhyChooseUs-Container h1 {
   color: #1e60aa;
-  margin-left: 10px;
-  margin-left: 50px;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .whyChooseUs-watermark {
   position: absolute;
-  color: rgba(
-    128,
-    128,
-    128,
-    0.1
-  ); /* Fainter color for a more watermark-like effect */
+  color: rgba(128, 128, 128, 0.1);
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 800;
-  font-size: 80px;
-  margin: 0px;
-  margin-top: -90px;
-  padding: 0px;
-  left: 10px; /* Center vertically within the container */
-  transform: translateY(-50%);
-  z-index: 0; /* Ensure it stays behind other content */
-  /* Gradient for text */
-  background: linear-gradient(
-    to right,
-    #0206ff0a,
-    #5c74ff06
-  ); /* Gradient colors */
-  -webkit-background-clip: text; /* Clips the gradient to the text */
-  -webkit-text-fill-color: transparent; /* Makes the rest of the text transparent */
-  text-align: center; /* Align text properly if needed */
+  font-size: clamp(40px, 10vw, 80px); /* Responsive font size */
+  margin: 0;
+  padding: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  background: linear-gradient(to right, #0206ff0a, #5c74ff06);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .text-line3 {
-  position: absolute;
+  position: relative;
   background-color: #278cff;
   height: 5px;
   width: 30px;
-  margin-top: 8px;
-  left: 10px;
-  margin-left: 0px;
+  margin: 10px auto;
 }
 
 .WhyChooseUs-copy {
-  margin-left: 50px;
+  margin: 20px auto;
   font-family: Arial, Helvetica, sans-serif;
   color: #505050;
-  font-size: clamp(10px, 18px);
+  font-size: clamp(14px, 1.2vw, 18px); /* Responsive font size */
+  max-width: 800px;
+  text-align: center;
 }
 
 .profilePic {
-  height: 100px;
-  margin-left: 50px;
+  height: 80px;
+  margin: 20px auto;
+  display: block;
 }
 
-.divider1 {
-  position: absolute;
-  background-color: rgb(0, 0, 131);
-  height: 50px;
-  width: 1px;
-  left: 330px;
-  margin-top: -80px;
-  margin-left: 45px;
+.WhyChooseUs-Container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
 }
 
-.founder-text {
-  position: absolute;
-  color: #636363;
-  height: 50px;
-  width: 1px;
-  left: 345px;
-  margin-top: -62px;
-  margin-left: 50px;
-}
-
-.blockOne {
-  position: absolute;
-  background-color: #d3dfee;
-  height: 220px;
-  width: 220px;
-  left: 700px;
-  margin: -350px 0px 0px 0px;
-  border-radius: 15px;
-  margin-left: 25px;
-}
-
-.blockOne h3 {
-  color: #1e60aa;
-  margin: 35px 0px 0px 20px;
-}
-
-.blockOne p {
-  color: rgb(93, 93, 93);
-  margin: 10px 0px 0px 20px;
-}
-
-.blockTwo {
-  position: absolute;
-  background-color: #d3dfee;
-  height: 220px;
-  width: 220px;
-  left: 950px;
-  margin: -320px 0px 0px 0px;
-  border-radius: 15px;
-  margin-left: 25px;
-}
-
-.blockTwo h3 {
-  color: #1e60aa;
-  margin: 20px 0px 0px 20px;
-}
-
-.blockTwo p {
-  color: rgb(93, 93, 93);
-  margin: 10px 0px 0px 20px;
-}
-
-.blockThree {
-  position: absolute;
-  background-color: #d3dfee;
-  height: 220px;
-  width: 220px;
-  left: 950px;
-  margin: -70px 0px 0px 0px;
-  border-radius: 15px;
-  margin-left: 25px;
-}
-
-.blockThree h3 {
-  color: #1e60aa;
-  margin: 20px 0px 0px 20px;
-}
-
-.blockThree p {
-  color: rgb(93, 93, 93);
-  margin: 10px 0px 0px 20px;
-}
-
+.blockOne,
+.blockTwo,
+.blockThree,
 .blockFour {
-  position: absolute;
   background-color: #d3dfee;
-  height: 240px;
-  width: 220px;
-  left: 975px;
-  margin: -95px 50px 0px -250px;
+  height: 220px;
+  width: calc(50% - 40px); /* Responsive sizing for two columns */
+  max-width: 200px;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
 }
 
+.blockOne h3,
+.blockTwo h3,
+.blockThree h3,
 .blockFour h3 {
   color: #1e60aa;
-  margin: 20px 0px 0px 20px;
+  margin: 15px 0 10px;
 }
 
+.blockOne p,
+.blockTwo p,
+.blockThree p,
 .blockFour p {
   color: rgb(93, 93, 93);
-  margin: 10px 0px 0px 20px;
+  font-size: 14px;
 }
 
-.ExperiencedIcon {
-  height: 100px;
+.icon {
+  height: 80px;
   width: auto;
-  margin: 20px 0px 0px 20px;
-  padding: 0px;
-}
-
-.FriendlyIcon {
-  height: 100px;
-  width: auto;
-  margin: 20px 0px 0px 20px;
-  padding: 0px;
-}
-
-.licensedIcon {
-  height: 100px;
-  width: auto;
-  margin: 20px 0px 0px 20px;
-  padding: 0px;
-}
-
-.QualityIcon {
-  height: 100px;
-  width: auto;
-  margin: 20px 0px 0px 20px;
-  padding: 0px;
+  margin-bottom: 10px;
 }
 
 .section-divider {
-  position: relative; /* Allows the divider to be placed in a specific location */
-  top: 200px; /* Adjust this value to position the divider vertically where you want */
-  left: 0; /* Start from the left edge of the parent container */
+  position: relative;
+  top: 50px;
   background-color: #1d62ae;
   height: 20px;
-  width: 100%; /* Adjust the width to cover the container */
-  z-index: 10; /* Ensure it stays above other elements if necessary */
+  width: 100%;
+  z-index: 10;
+}
+
+.ExperiencedIcon {
+  height: 80px;
+  width: auto;
+}
+.FriendlyIcon {
+  height: 80px;
+  width: auto;
+}
+.LicensedIcon {
+  height: 80px;
+  width: auto;
+}
+.QualityIcon {
+  height: 80px;
+  width: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .WhyChooseUs-Container {
+    padding: 20px;
+  }
+
+  .blockOne,
+  .blockTwo,
+  .blockThree,
+  .blockFour {
+    width: 10%;
+  }
 }
 
 /* ...............Quote Form..............*/
