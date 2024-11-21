@@ -1,8 +1,8 @@
 import profilePic from '../images/Profile-and-Signature.png'
-import ExperiencedIcon from '../images/experience.png'
-import FriendlyIcon from '../images/expertise.png'
-import LicensedIcon from '../images/assurance.png'
-import QualityIcon from '../images/high-quality.png'
+// import ExperiencedIcon from '../images/experience.png'
+// import FriendlyIcon from '../images/expertise.png'
+// import LicensedIcon from '../images/assurance.png'
+// import QualityIcon from '../images/high-quality.png'
 
 
 function WhyChooseUs() {
@@ -22,7 +22,7 @@ function WhyChooseUs() {
       <div className="divider1"></div>
       <p className='founder-text'>Founder</p>
       </div>
-      <div className="WhyChooseUs-Container2">
+      {/* <div className="WhyChooseUs-Container2">
         <div className="blockOne">
             <img className="ExperiencedIcon" src={ExperiencedIcon} alt="Icon" />
           <h3>Experienced Team</h3>
@@ -44,7 +44,7 @@ function WhyChooseUs() {
           <p>We guarantee dependable service with every project.</p>
         </div>
       </div>
-      <div className="section-divider"></div>
+      <div className="section-divider"></div> */}
     </div>
   );
 }

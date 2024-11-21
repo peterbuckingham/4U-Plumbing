@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import Logo from "../images/logo-transparent.png"
 
 const TopNav = () => {
   const [expanded, setExpanded] = useState(false);
@@ -11,8 +12,8 @@ const TopNav = () => {
       <Container>
         {/* Logo */}
         <Navbar.Brand href="#home">
-          <img src="logo.png" alt="Logo" height="40" />
-          Four U Plumbing
+          <img src={Logo} alt="Logo" height="40" />
+          <strong className='Logo-txt'>4U Plumbing</strong>
         </Navbar.Brand>
         
         {/* Hamburger Menu */}
